@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="SearchResult.Name" parent="TextAppearance.AppCompat.Title"></style>
+
+    <style name="Detail.Name" parent="TextAppearance.AppCompat.Headline"></style>
+
+    <style name="Detail.PropertyName" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Detail.PropertyValue" parent="TextAppearance.AppCompat.Body2"></style>
+</resources>

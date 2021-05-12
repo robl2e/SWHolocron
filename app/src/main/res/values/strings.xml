@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SWHolocron</string>
+    <string name="search">Search</string>
+    <string name="search_empty">No Results. Use the force</string>
+    <string name="birth_year">Birth Year</string>
+    <string name="gender">Gender</string>
+    <string name="height">Height</string>
+    <string name="mass">Mass</string>
+</resources>

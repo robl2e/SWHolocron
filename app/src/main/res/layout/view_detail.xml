@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_person"
+        android:layout_width="@dimen/detail_image_width"
+        android:layout_height="@dimen/detail_image_height"
+        android:padding="@dimen/search_result_image_padding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_name"
+        style="@style/Detail.Name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/image_person"
+        app:layout_constraintLeft_toRightOf="@id/image_person"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image_person"
+        tools:text="Luke Skywalker" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/detail_info_padding"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_person">
+
+        <TextView
+            android:id="@+id/text_property_birth_year"
+            style="@style/Detail.PropertyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/birth_year" />
+
+        <TextView
+            android:id="@+id/text_property_value_birth_year"
+            style="@style/Detail.PropertyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="338BY" />
+
+        <TextView
+            android:id="@+id/text_property_gender"
+            style="@style/Detail.PropertyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/gender" />
+
+        <TextView
+            android:id="@+id/text_property_value_gender"
+            style="@style/Detail.PropertyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="n/a" />
+
+        <TextView
+            android:id="@+id/text_property_height"
+            style="@style/Detail.PropertyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/height" />
+
+        <TextView
+            android:id="@+id/text_property_value_height"
+            style="@style/Detail.PropertyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="96" />
+
+        <TextView
+            android:id="@+id/text_property_mass"
+            style="@style/Detail.PropertyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/mass" />
+
+        <TextView
+            android:id="@+id/text_property_value_mass"
+            style="@style/Detail.PropertyValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="32" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
